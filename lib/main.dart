@@ -14,9 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: TAppTheme.lighTheme,
-      darkTheme: ThemeData(
-        brightness: Brightness.dark,
-      ),
+      darkTheme: TAppTheme.darkTheme,
       // definition of the theme
       themeMode: ThemeMode.system,
       home: const AppHome(),
