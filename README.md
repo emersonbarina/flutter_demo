@@ -18,7 +18,7 @@ samples, guidance on mobile development, and a full API reference.
 Learnig fonts : 
 
 - [Youtube Theme](https://youtu.be/Q9FosAdX2U4)
--- [Pub.Dev](https://pub.dev/packages/google_fonts)
+- [Pub.Dev](https://pub.dev/packages/google_fonts)
 
 - [Youtube Native Splash](https://youtu.be/4Aawfl6yOg4)
--- [Pub.Dev](https://pub.dev/packages/flutter_native_splash)
+- [Pub.Dev](https://pub.dev/packages/flutter_native_splash)
