@@ -15,10 +15,14 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-Learnig fonts : 
+## Learnig fonts : 
 
 - [Youtube Theme](https://youtu.be/Q9FosAdX2U4)
-- [Pub.Dev](https://pub.dev/packages/google_fonts)
+- [Pub.Dev Google_Fonts](https://pub.dev/packages/google_fonts)
+
 
 - [Youtube Native Splash](https://youtu.be/4Aawfl6yOg4)
-- [Pub.Dev](https://pub.dev/packages/flutter_native_splash)
+- [Pub.Dev Native_Splash](https://pub.dev/packages/flutter_native_splash)
+```
+flutter pub run flutter_native_splash:create
+```
