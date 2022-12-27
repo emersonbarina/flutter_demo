@@ -36,9 +36,9 @@ class AppHome extends StatelessWidget {
         padding: const EdgeInsets.all(20.0),
         child: ListView(
           children: [
-            const Text("Heding"),
-            const Text("Sub-heding"),
-            const Text("Paragraph"),
+            Text("Heding",style: Theme.of(context).textTheme.headline2,),
+            Text("Sub-heding",style: Theme.of(context).textTheme.subtitle1,),
+            Text("Paragraph",style: Theme.of(context).textTheme.bodyText1,),
             ElevatedButton(
               onPressed: () {},
               child: Text("Elevated"),
