@@ -16,4 +16,5 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 Learnig fonts : 
-- [Youtube](https://youtu.be/Q9FosAdX2U4)
+- [Youtube Thme](https://youtu.be/Q9FosAdX2U4)
+- [Youtube Native Splash](https://youtu.be/4Aawfl6yOg4)
