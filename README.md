@@ -1,6 +1,6 @@
 # flutter_demo
 
-A new Flutter project.
+Demo Project using flutter resources
 
 ## Getting Started
 
@@ -16,5 +16,9 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 Learnig fonts : 
-- [Youtube Thme](https://youtu.be/Q9FosAdX2U4)
+
+- [Youtube Theme](https://youtu.be/Q9FosAdX2U4)
+(https://pub.dev/packages/google_fonts)
+
 - [Youtube Native Splash](https://youtu.be/4Aawfl6yOg4)
+(https://pub.dev/packages/flutter_native_splash)
