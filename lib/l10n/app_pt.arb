@@ -1,0 +1,21 @@
+{
+    "appName": "Login",
+    "homePageTitle": "Access Control",
+    "name": "Name",
+    "nameHint": "Enter your name",
+    "email": "Email",
+    "emailHint": "Enter your email",
+    "password": "Password",
+    "passwordHint": "Enter your password",
+    "submitLogin": "Login",
+    "submitSave": "Save",
+    "submitCancel": "Cancel",
+    "submitOk": "Ok",
+    "settings": "Settings",
+    "changeLanguage": "Change Language",
+    "forgot": "Forgot Password?",
+    "signIn": "Sign In",
+    "signOr": "Or continue with",
+    "notMember": "Not a member?",
+    "registerNow": "Register Now"
+}

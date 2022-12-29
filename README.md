@@ -29,7 +29,7 @@ samples, guidance on mobile development, and a full API reference.
 flutter pub run flutter_native_splash:create
 ```
 
-### Launcher Icons
+### Launcher Icons  
 - [Launcher Icons](https://pub.dev/packages/flutter_launcher_icons)
 ```
 flutter pub get
@@ -41,5 +41,5 @@ flutter pub run flutter_launcher_icons
 - [Youtube](https://youtu.be/WrqH5fF2ZuY)
 - [Youtube](https://youtu.be/aIEegP0cUOQ)
 - [Youtube](https://youtu.be/YE_8l1OW2wE)
-- [Locales Codes](https://www.science.co.il/language/Locale-codes.php)
+- [Doc Locales Codes](https://www.science.co.il/language/Locale-codes.php)
 - 
