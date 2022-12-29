@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo_theme/src/utils/theme/theme.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 
 void main() {
@@ -15,17 +15,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-
-      localizationsDelegates: [
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-      ],
-      supportedLocales: [
-        Locale('en', ''), // English, no country code
-        Locale('es', ''), // Spanish, no country code
-        Locale('pt', ''), // Portuguese, no country code
-      ],
+      // Internationalizing
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
+      locale: Locale('pt', ''),
       theme: TAppTheme.lighTheme,
       darkTheme: TAppTheme.darkTheme,
       // definition of the theme
@@ -42,7 +35,7 @@ class AppHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("App Theme Demo"),
+        title: Text(AppLocalizations.of(context)!.appName),
         leading: const Icon(Icons.account_circle_sharp),
       ),
       body: Padding(
