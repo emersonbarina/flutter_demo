@@ -36,10 +36,10 @@ flutter pub get
 flutter pub run flutter_launcher_icons
 ```
 
-### Internacionalization
+### Internationalization
 - [Doc](https://docs.flutter.dev/development/accessibility-and-localization/internationalization)
 - [Youtube](https://youtu.be/WrqH5fF2ZuY)
 - [Youtube](https://youtu.be/aIEegP0cUOQ)
 - [Youtube](https://youtu.be/YE_8l1OW2wE)
 - [Doc Locales Codes](https://www.science.co.il/language/Locale-codes.php)
-- 
+
