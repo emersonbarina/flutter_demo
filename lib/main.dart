@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       // Internationalizing
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      locale: Locale('pt', ''),
+      locale: const Locale('pt', ''),
       theme: TAppTheme.lighTheme,
       darkTheme: TAppTheme.darkTheme,
       // definition of the theme
@@ -44,23 +44,23 @@ class AppHome extends StatelessWidget {
         padding: const EdgeInsets.all(20.0),
         child: ListView(
           children: [
-            Text("Heding",style: Theme.of(context).textTheme.headline2,),
-            Text("Sub-heding",style: Theme.of(context).textTheme.subtitle1,),
+            Text("Heading",style: Theme.of(context).textTheme.headline2,),
+            Text("Sub-heading",style: Theme.of(context).textTheme.subtitle1,),
             Text("Paragraph",style: Theme.of(context).textTheme.bodyText1,),
             ElevatedButton(
               onPressed: () {},
-              child: Text("Elevated"),
+              child: const Text("Elevated"),
             ),
             OutlinedButton(
               onPressed: () {},
-              child: Text("outlined"),
+              child: const Text("outlined"),
             ),
             TextButton(
               onPressed: () {},
-              child: Text("Text Button"),
+              child: const Text("Text Button"),
             ),
             const Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: EdgeInsets.all(20.0),
               child: Image(
                   image: AssetImage("assets/images/icon-transparent700.png")),
             ),
