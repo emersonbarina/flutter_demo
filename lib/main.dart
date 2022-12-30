@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo_theme/src/features/authentication/screens/splash_screen/splash_screen.dart';
 import 'package:flutter_demo_theme/src/utils/theme/theme.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
       darkTheme: TAppTheme.darkTheme,
       // definition of the theme
       themeMode: ThemeMode.system,
-      home: const AppHome(),
+      home: const SplashScreen(),
     );
   }
 }
