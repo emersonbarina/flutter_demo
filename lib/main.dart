@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_demo_theme/src/features/authentication/screens/splash_screen/splash_screen.dart';
 import 'package:flutter_demo_theme/src/utils/theme/theme.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 
 void main() {
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       // Internationalizing
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
       darkTheme: TAppTheme.darkTheme,
       // definition of the theme
       themeMode: ThemeMode.system,
-      home: const SplashScreen(),
+      home: SplashScreen(),
     );
   }
 }

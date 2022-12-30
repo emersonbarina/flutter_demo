@@ -43,3 +43,6 @@ flutter pub run flutter_launcher_icons
 - [Youtube](https://youtu.be/YE_8l1OW2wE)
 - [Doc Locales Codes](https://www.science.co.il/language/Locale-codes.php)
 
+### Splash Screen Animated and GetX 
+- [GetX](https://pub.dev/packages/get) 
+- [Youtube](https://youtu.be/a6IX3tj1wtk)
