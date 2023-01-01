@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo_theme/src/constants/colors.dart';
-import 'package:flutter_demo_theme/src/constants/image_strings.dart';
-import 'package:flutter_demo_theme/src/constants/sizes.dart';
-import 'package:flutter_demo_theme/src/constants/text_strings.dart';
+import 'package:flutter_demo_theme/src/constants/splash_screen/colors.dart';
+import 'package:flutter_demo_theme/src/constants/splash_screen/image_strings.dart';
+import 'package:flutter_demo_theme/src/constants/splash_screen/sizes.dart';
+import 'package:flutter_demo_theme/src/constants/splash_screen/text_strings.dart';
 import 'package:flutter_demo_theme/src/features/authentication/controllers/splash_screen_controller.dart';
 import 'package:get/get.dart';
 
