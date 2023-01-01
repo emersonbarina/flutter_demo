@@ -1,4 +1,4 @@
-import 'dart:ui';
+import 'package:flutter/material.dart';
 
 /* -- LIST OF COLORS -- */
 
@@ -9,3 +9,8 @@ const tAccentColor = Color(0xFF001DFF);
 const tCardBgColor = Color(0xFFF7F6F1);
 const tWhiteColor = Color(0xFFFFFFFF);
 const tDarkColor = Color(0xFF000000);
+
+// ON BOARDING COLORS
+const tOnBoardingPage1Color = Colors.white;
+const tOnBoardingPage2Color = Color(0xFFFDDCDF);
+const tOnBoardingPage3Color = Color(0xFFFFDCBD);
