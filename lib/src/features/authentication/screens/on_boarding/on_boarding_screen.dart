@@ -18,40 +18,7 @@ class OnBoardingScreen extends StatelessWidget {
         children: [
           LiquidSwipe(
             pages: [
-              Container(
-                padding: EdgeInsets.all(tDefaultSize),
-                color: tOnBoardingPage1Color,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  mainAxisSize: MainAxisSize.max,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Image(
-                      image: AssetImage(tOnBoardingImage1),
-                      height: size.height * 0.5,
-                    ),
-                    Column(
-                      children: [
-                        Text(
-                          tOnBoardingTitle1,
-                          style: Theme.of(context).textTheme.headline5,
-                        ),
-                        Text(
-                          tOnBoardingSubTitle1,
-                          textAlign: TextAlign.center,
-                        ),
-                      ],
-                    ),
-                    Text(
-                      tOnBoardingCounter1,
-                      style: Theme.of(context).textTheme.headline6,
-                    ),
-                    SizedBox(
-                      height: 50.0,
-                    )
-                  ],
-                ),
-              ),
+              OnBoardingPage(size: size),
               Container(
                 color: tOnBoardingPage2Color,
               ),
@@ -60,6 +27,53 @@ class OnBoardingScreen extends StatelessWidget {
               ),
             ],
           ),
+        ],
+      ),
+    );
+  }
+}
+
+class OnBoardingPage extends StatelessWidget {
+  const OnBoardingPage({
+    Key? key,
+    required this.size,
+  }) : super(key: key);
+
+  final Size size;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.all(tDefaultSize),
+      color: tOnBoardingPage1Color,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisSize: MainAxisSize.max,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Image(
+            image: AssetImage(tOnBoardingImage1),
+            height: size.height * 0.5,
+          ),
+          Column(
+            children: [
+              Text(
+                tOnBoardingTitle1,
+                style: Theme.of(context).textTheme.headline5,
+              ),
+              Text(
+                tOnBoardingSubTitle1,
+                textAlign: TextAlign.center,
+              ),
+            ],
+          ),
+          Text(
+            tOnBoardingCounter1,
+            style: Theme.of(context).textTheme.headline6,
+          ),
+          SizedBox(
+            height: 50.0,
+          )
         ],
       ),
     );
