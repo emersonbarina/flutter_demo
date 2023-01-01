@@ -23,7 +23,7 @@ class OnBoardingPageWidget extends StatelessWidget {
         children: [
           Image(
             image: AssetImage(model.image),
-            height: model.height * 0.5,
+            height: model.height * 0.4,
           ),
           Column(
             children: [
@@ -42,7 +42,7 @@ class OnBoardingPageWidget extends StatelessWidget {
             style: Theme.of(context).textTheme.headline6,
           ),
           const SizedBox(
-            height: 50.0,
+            height: 80.0,
           )
         ],
       ),
