@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo_theme/src/constants/colors.dart';
 import 'package:flutter_demo_theme/src/constants/image_strings.dart';
 import 'package:flutter_demo_theme/src/constants/sizes.dart';
 import 'package:flutter_demo_theme/src/constants/text_strings.dart';
@@ -12,12 +11,12 @@ class WelcomeScreen extends StatelessWidget {
     var height = MediaQuery.of(context).size.height;
     return Scaffold(
       body: Container(
-        padding: EdgeInsets.all(tDefaultSize),
+        padding: const EdgeInsets.all(tDefaultSize),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Image(
-              image: AssetImage(tWelcomeScreenImage),
+              image: const AssetImage(tWelcomeScreenImage),
               height: height * 0.6,
             ),
             Column(
@@ -38,11 +37,7 @@ class WelcomeScreen extends StatelessWidget {
                 Expanded(
                   child: OutlinedButton(
                     onPressed: () {},
-                    style: OutlinedButton.styleFrom(
-                        shape: RoundedRectangleBorder(),
-                        foregroundColor: tSecondaryColor,
-                        side: BorderSide(color: tSecondaryColor),
-                        padding: EdgeInsets.symmetric(vertical: tButtonHeight)),
+
                     child: Text(tLogin.toUpperCase()),
                   ),
                 ),
@@ -52,13 +47,7 @@ class WelcomeScreen extends StatelessWidget {
                 Expanded(
                   child: ElevatedButton(
                     onPressed: () {},
-                    style: ElevatedButton.styleFrom(
-                        elevation: 0,
-                        shape: RoundedRectangleBorder(),
-                        foregroundColor: tWhiteColor,
-                        backgroundColor: tSecondaryColor,
-                        side: BorderSide(color: tSecondaryColor),
-                        padding: EdgeInsets.symmetric(vertical: tButtonHeight)),
+
                     child: Text(tSignup.toUpperCase()),
                   ),
                 ),
