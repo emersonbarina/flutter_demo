@@ -1,6 +1,10 @@
 
 /* -- App default sizing -- */
 
+// Generic Texts
+const String tLogin = "Login";
+const String tSignup = "Signup";
+
 // Splash Screen Texts
 const String tAppName = "Demo App";
 const String tAppTagLine = "App Developed \nFlutter";
@@ -15,3 +19,7 @@ const String tOnBoardingSubTitle3 = "We will be your IT team";
 const String tOnBoardingCounter1 = "1/3";
 const String tOnBoardingCounter2 = "2/3";
 const String tOnBoardingCounter3 = "3/3";
+
+// Welcome Texts
+const String tWelcomeTitle = "Welcome! Build awesome apps";
+const String tWelcomeSubTitle = "Making apps with fun designs in Flutter, I loved it!";
