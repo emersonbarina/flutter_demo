@@ -1,10 +1,10 @@
 
 import 'package:get/get.dart';
 
-import '../screens/welcome/welcome_screen.dart';
+import '../../features/authentication/screens/welcome/welcome_screen.dart';
 
-class SplashScreenController extends GetxController{
-  static SplashScreenController get find => Get.find();
+class FadeInAnimationController extends GetxController{
+  static FadeInAnimationController get find => Get.find();
 
   RxBool animate = false.obs;
 
