@@ -22,6 +22,7 @@ samples, guidance on mobile development, and a full API reference.
 - [Youtube Theme](https://youtu.be/Q9FosAdX2U4)
 - [Google_Fonts](https://pub.dev/packages/google_fonts)
 - [Doc](https://docs.flutter.dev/cookbook/design/themes)
+- [TextStyle class](https://api.flutter.dev/flutter/painting/TextStyle-class.html)
 
 ### Native Splash 
 - [Youtube Native Splash](https://youtu.be/4Aawfl6yOg4)
@@ -56,3 +57,5 @@ flutter pub run flutter_launcher_icons
 - [Package smooth_page_indicator](https://pub.dev/packages/smooth_page_indicator)
 - [Youtube](https://youtu.be/BtSVdJ134dQ)
 
+### Welcome Screen
+- [Youtube](https://youtu.be/qze9FjylzLE)

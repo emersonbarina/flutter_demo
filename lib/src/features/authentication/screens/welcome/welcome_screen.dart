@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo_theme/src/constants/colors.dart';
 import 'package:flutter_demo_theme/src/constants/image_strings.dart';
 import 'package:flutter_demo_theme/src/constants/sizes.dart';
 import 'package:flutter_demo_theme/src/constants/text_strings.dart';
@@ -8,8 +9,13 @@ class WelcomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var height = MediaQuery.of(context).size.height;
+    var mediaQuery = MediaQuery.of(context);
+    var height = mediaQuery.size.height;
+    var brightness = mediaQuery.platformBrightness;
+    final isDarkMode = brightness == Brightness.dark;
+
     return Scaffold(
+      backgroundColor: isDarkMode ? tSecondaryColor : tPrimaryColor,
       body: Container(
         padding: const EdgeInsets.all(tDefaultSize),
         child: Column(
