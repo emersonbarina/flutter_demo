@@ -16,7 +16,7 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-## Learnig fonts : 
+## Learning fonts : 
 
 ### Themes
 - [Youtube Theme](https://youtu.be/Q9FosAdX2U4)
@@ -59,3 +59,6 @@ flutter pub run flutter_launcher_icons
 
 ### Welcome Screen
 - [Youtube](https://youtu.be/qze9FjylzLE)
+
+### Animate any widget in Flutter
+- [Youtube](https://youtu.be/0orluUfFawI)
