@@ -22,4 +22,4 @@ const String tOnBoardingCounter3 = "3/3";
 
 // Welcome Texts
 const String tWelcomeTitle = "Welcome! Build awesome apps";
-const String tWelcomeSubTitle = "Making apps with fun designs in Flutter, I loved it!";
+const String tWelcomeSubTitle = "Making apps with fun drawings in Flutter, I loved it! You are welcome to use this code to learn too";
