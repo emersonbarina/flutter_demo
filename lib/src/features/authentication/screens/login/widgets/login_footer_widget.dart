@@ -35,7 +35,7 @@ class LoginFooterWidget extends StatelessWidget {
           onPressed: () {},
           child: Text.rich(
             TextSpan(
-              text: tAlreadyHaveAnAccount,
+              text: tNotHaveOnAccount,
               style: Theme.of(context).textTheme.bodyText1,
               children: const [
                 TextSpan(
