@@ -32,4 +32,7 @@ const String tAlredyHaveAnAccount = "Already have an Account?";
 const String tEmail = "E-mail";
 const String tPassword = "Password";
 const String tForgetPassword = "Forget Password?";
+const String tOrOption = "or";
+const String tSignInWithGoogle = "Sign-in with Google";
+
 
