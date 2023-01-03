@@ -14,6 +14,7 @@ class LoginHeaderWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Image(
           image: const AssetImage(tWelcomeScreenImage),
