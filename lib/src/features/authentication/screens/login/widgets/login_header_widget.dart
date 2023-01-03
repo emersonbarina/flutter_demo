@@ -6,13 +6,11 @@ import '../../../../../constants/text_strings.dart';
 class LoginHeaderWidget extends StatelessWidget {
   const LoginHeaderWidget({
     Key? key,
-    required this.size,
   }) : super(key: key);
-
-  final Size size;
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
