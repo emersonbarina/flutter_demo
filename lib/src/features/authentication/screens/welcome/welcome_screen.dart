@@ -5,6 +5,7 @@ import 'package:flutter_demo_theme/src/constants/colors.dart';
 import 'package:flutter_demo_theme/src/constants/image_strings.dart';
 import 'package:flutter_demo_theme/src/constants/sizes.dart';
 import 'package:flutter_demo_theme/src/constants/text_strings.dart';
+import 'package:flutter_demo_theme/src/features/authentication/screens/login/login_screen.dart';
 import 'package:get/get.dart';
 
 import '../../../../common_widgets/fade_in_animation/fade_in_animation_controller.dart';
@@ -65,7 +66,7 @@ class WelcomeScreen extends StatelessWidget {
                     children: [
                       Expanded(
                         child: OutlinedButton(
-                          onPressed: () {},
+                          onPressed: () => Get.to(() => const LoginScreen()),
                           child: Text(tLogin.toUpperCase()),
                         ),
                       ),

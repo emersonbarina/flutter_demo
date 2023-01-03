@@ -12,3 +12,6 @@ const String tOnBoardingImage3 = "assets/images/on_boarding_images/on-boarding-i
 
 // Welcome Screen Images
 const String tWelcomeScreenImage = "assets/images/welcome_images/welcome-image.png";
+
+// Login Image
+const String tGoogleImage = "assets/images/common/google.png";
