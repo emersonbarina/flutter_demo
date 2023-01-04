@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_demo_theme/src/features/authentication/screens/splash_screen/splash_screen.dart';
 import 'package:flutter_demo_theme/src/utils/theme/theme.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:get/get.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 
@@ -21,11 +22,13 @@ class MyApp extends StatelessWidget {
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
       locale: const Locale('pt', ''),
-      theme: TAppTheme.lighTheme,
-      darkTheme: TAppTheme.darkTheme,
       // definition of the theme
       themeMode: ThemeMode.system,
-      home: SplashScreen(),
+      theme: TAppTheme.lighTheme,
+      darkTheme: TAppTheme.darkTheme,
+      defaultTransition: Transition.leftToRightWithFade,
+      transitionDuration: const Duration(milliseconds: 500),
+      home: const SplashScreen(),
     );
   }
 }
