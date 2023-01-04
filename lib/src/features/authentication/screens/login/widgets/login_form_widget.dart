@@ -44,7 +44,48 @@ class LoginForm extends StatelessWidget {
             Align(
               alignment: Alignment.centerRight,
               child: TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  showModalBottomSheet(
+                    context: context,
+                    builder: (context) => Container(
+                      padding: const EdgeInsets.all(tDefaultSize),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            tForgetPasswordTitle,
+                            style: Theme.of(context).textTheme.headline2,
+                          ),
+                          Text(
+                            tForgetPasswordSubTitle,
+                            style: Theme.of(context).textTheme.bodyText1,
+                          ),
+                          const SizedBox(height: 30.0,),
+                          Container(
+                            padding: const EdgeInsets.all(20.0),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10.0),
+                              color: Colors.grey.shade200,
+                            ),
+                            child: Row(
+                              children: [
+                                const Icon(Icons.mail_outline_outlined, size: 60.0,),
+                                const SizedBox(width: 10.0,),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(tEmail, style: Theme.of(context).textTheme.headline5,),
+                                    Text(tForgetPasswordResetViaEmail, style: Theme.of(context).textTheme.bodyText1,),
+                                  ],
+                                )
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  );
+                },
                 child: const Text(tForgetPassword),
               ),
             ),
