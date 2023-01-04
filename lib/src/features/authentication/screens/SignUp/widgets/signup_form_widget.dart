@@ -24,7 +24,7 @@ class SignUpFormWidget extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: tFormHeight - 20,
+              height: tFormHeight - 25,
             ),
             TextFormField(
               decoration: const InputDecoration(
@@ -33,7 +33,7 @@ class SignUpFormWidget extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: tFormHeight - 20,
+              height: tFormHeight - 25,
             ),
             TextFormField(
               decoration: const InputDecoration(
@@ -42,7 +42,7 @@ class SignUpFormWidget extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: tFormHeight - 20,
+              height: tFormHeight - 25,
             ),
             TextFormField(
               decoration: const InputDecoration(

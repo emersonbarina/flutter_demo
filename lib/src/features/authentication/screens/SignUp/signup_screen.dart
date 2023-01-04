@@ -16,16 +16,20 @@ class SignUpScreen extends StatelessWidget {
           child: Container(
             padding: const EdgeInsets.all(tDefaultSize),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const FormHeaderWidget(
                   image: tWelcomeScreenImage,
                   title: tSignUpTitle,
                   subTitle: tSignUpSubTitle,
                 ),
-                SignUpFormWidget(),
+                const SignUpFormWidget(),
                 Column(
                   children: [
                     Text(tOrOption.toUpperCase()),
+                    const SizedBox(
+                      height: tFormHeight - 20,
+                    ),
                     SizedBox(
                       width: double.infinity,
                       child: OutlinedButton.icon(
@@ -42,7 +46,7 @@ class SignUpScreen extends StatelessWidget {
                         TextSpan(
                           children: [
                             TextSpan(text: tAlreadyHaveAnAccount, style: Theme.of(context).textTheme.bodyText1),
-                            TextSpan(text: tLogin,),
+                            const TextSpan(text: tLogin,),
                           ]
                         ),
                       ),

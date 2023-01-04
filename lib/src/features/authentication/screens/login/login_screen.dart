@@ -9,7 +9,6 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //final size = MediaQuery.of(context).size; // Get the size in LoginHeaderWidget()
     return SafeArea(
       child: Scaffold(
         body: SingleChildScrollView(
