@@ -16,3 +16,6 @@ const String tWelcomeScreenImage = "assets/images/start_images/welcome-image.png
 
 // Login and SingUp Image
 const String tGoogleImage = "assets/images/common/google.png";
+
+// Forgot Password Image
+const String tForgetPasswordImage = "assets/images/start_images/forget-password.png";

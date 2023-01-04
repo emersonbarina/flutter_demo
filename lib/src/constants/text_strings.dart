@@ -25,20 +25,31 @@ const String tWelcomeTitle = "Welcome! Build awesome apps";
 const String tWelcomeSubTitle = "Making apps with fun drawings in Flutter, I loved it! You are welcome to use this code to learn too";
 
 // Login Screen
-const String tLoginTitle = "Welcome";
+const String tLoginTitle = "Welcome!";
 const String tLoginSubTitle = "Very nice to have you here";
 const String tRememberMe = "Remember Me?";
 const String tNotHaveOnAccount = "Don't have on Account? ";
+
+// SignUp Screen
+const String tSignUpTitle = "Get On Board!";
+const String tSignUpSubTitle = "Create your profile to start your journey.";
+const String tAlreadyHaveAnAccount = "Already have an Account? ";
+
+// Forget Screens
+const String tForgetPasswordTitle = "Make selection!";
+const String tForgetPasswordSubTitle = "Select one of the options given below to reset your password.";
+const String tForgetPasswordResetViaEmail = "Reset via E-mail Verification.";
+const String tForgetPasswordResetViaPhone = "Reset via Phone Verification.";
+const String tForgetPasswordMailSubTitle = "Enter your registered E-mail to receive OTP";
+const String tForgetPasswordPhoneSubTitle = "Enter your registered Phone No to receive OTP";
+
+
+// Login, SignUp, Forget
 const String tEmail = "E-mail";
 const String tPassword = "Password";
+const String tFullName = "Full Name";
+const String tPhoneNumber = "Phone Number";
 const String tForgetPassword = "Forget Password?";
 const String tOrOption = "or";
 const String tSignInWithGoogle = "Sign-in with Google";
-
-// SignUp Screen
-const String tSignUpTitle = "Get On Board";
-const String tSignUpSubTitle = "Create your profile to start your journey.";
-const String tAlreadyHaveAnAccount = "Already have an Account? ";
-const String tFullName = "Full Name";
-const String tPhoneNumber = "Phone Number";
 
