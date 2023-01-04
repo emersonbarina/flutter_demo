@@ -73,6 +73,8 @@ flutter pub run flutter_launcher_icons
 - [Youtube](https://youtu.be/IQ0-_MLjHL4)
 
 ### OTP Page
+- [Package Flutter_otp_text_field <-](https://pub.dev/packages/flutter_otp_text_field)
+- [Package otp_text_field](https://pub.dev/packages/otp_text_field)
 - [Youtube](https://youtu.be/pkzaODznLMw)
 
 

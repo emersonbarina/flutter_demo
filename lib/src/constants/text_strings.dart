@@ -45,6 +45,10 @@ const String tForgetPasswordResetViaPhone = "Reset via Phone Verification.";
 const String tForgetPasswordMailSubTitle = "Enter your registered E-mail to receive OTP";
 const String tForgetPasswordPhoneSubTitle = "Enter your registered Phone No to receive OTP";
 
+// OTP Screen
+const String tOtpTitle = "CO\nDE";
+const String tOtpSubTitle = "verification";
+const String tOtpMessage = "Enter the verification code sent at";
 
 // Login, SignUp, Forget
 const String tEmail = "E-mail";
@@ -53,4 +57,3 @@ const String tFullName = "Full Name";
 const String tPhoneNumber = "Phone Number";
 const String tForgetPassword = "Forget Password?";
 const String tSignInWithGoogle = "Sign-in with Google";
-
