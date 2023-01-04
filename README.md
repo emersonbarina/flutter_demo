@@ -68,3 +68,11 @@ flutter pub run flutter_launcher_icons
 
 ### SignUp Page
 - [Youtube](https://youtu.be/rcRppzsY-yw)
+
+### Forget Password Page
+- [Youtube](https://youtu.be/IQ0-_MLjHL4)
+
+### OTP Page
+- [Youtube](https://youtu.be/pkzaODznLMw)
+
+
