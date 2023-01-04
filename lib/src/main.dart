@@ -3,8 +3,6 @@ import 'package:flutter_demo_theme/src/features/authentication/screens/splash_sc
 import 'package:flutter_demo_theme/src/utils/theme/theme.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:get/get.dart';
-import 'package:get/get_navigation/src/root/get_material_app.dart';
-
 
 void main() {
   runApp(const MyApp());
