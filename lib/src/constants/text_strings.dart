@@ -4,6 +4,8 @@
 // Generic Texts
 const String tLogin = "Login";
 const String tSignup = "Signup";
+const String tNext = "Next";
+const String tOrOption = "or";
 
 // Splash Screen Texts
 const String tAppName = "Demo App";
@@ -50,6 +52,5 @@ const String tPassword = "Password";
 const String tFullName = "Full Name";
 const String tPhoneNumber = "Phone Number";
 const String tForgetPassword = "Forget Password?";
-const String tOrOption = "or";
 const String tSignInWithGoogle = "Sign-in with Google";
 
