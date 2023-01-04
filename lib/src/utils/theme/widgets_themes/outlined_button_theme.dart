@@ -9,18 +9,18 @@ class TOutlinedButtonTheme {
   // Light Theme
   static final lightOutlinedButtonTheme = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
-        shape: RoundedRectangleBorder(),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
         foregroundColor: tSecondaryColor,
-        side: BorderSide(color: tSecondaryColor),
-        padding: EdgeInsets.symmetric(vertical: tButtonHeight)),
+        side: const BorderSide(color: tSecondaryColor),
+        padding: const EdgeInsets.symmetric(vertical: tButtonHeight)),
   );
 
   // Dark Theme
   static final darkOutlinedButtonTheme = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
-        shape: RoundedRectangleBorder(),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
         foregroundColor: tWhiteColor,
-        side: BorderSide(color: tWhiteColor),
-        padding: EdgeInsets.symmetric(vertical: tButtonHeight)),
+        side: const BorderSide(color: tWhiteColor),
+        padding: const EdgeInsets.symmetric(vertical: tButtonHeight)),
   );
 }
