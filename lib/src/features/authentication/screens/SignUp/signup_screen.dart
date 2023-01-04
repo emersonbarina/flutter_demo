@@ -3,6 +3,7 @@ import 'package:flutter_demo_theme/src/common_widgets/form/form_header_widget.da
 import 'package:flutter_demo_theme/src/constants/image_strings.dart';
 import 'package:flutter_demo_theme/src/constants/sizes.dart';
 import 'package:flutter_demo_theme/src/constants/text_strings.dart';
+import 'package:flutter_demo_theme/src/features/authentication/screens/SignUp/widgets/signup_footer_widget.dart';
 import 'package:flutter_demo_theme/src/features/authentication/screens/SignUp/widgets/signup_form_widget.dart';
 
 class SignUpScreen extends StatelessWidget {
@@ -17,42 +18,14 @@ class SignUpScreen extends StatelessWidget {
             padding: const EdgeInsets.all(tDefaultSize),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const FormHeaderWidget(
+              children: const [
+                FormHeaderWidget(
                   image: tWelcomeScreenImage,
                   title: tSignUpTitle,
                   subTitle: tSignUpSubTitle,
                 ),
-                const SignUpFormWidget(),
-                Column(
-                  children: [
-                    Text(tOrOption.toUpperCase()),
-                    const SizedBox(
-                      height: tFormHeight - 20,
-                    ),
-                    SizedBox(
-                      width: double.infinity,
-                      child: OutlinedButton.icon(
-                          onPressed: () {},
-                          icon: const Image(
-                            image: AssetImage(tGoogleImage),
-                            width: tFormHeight - 10,
-                          ),
-                          label: const Text(tSignInWithGoogle)),
-                    ),
-                    TextButton(
-                      onPressed: () {},
-                      child: Text.rich(
-                        TextSpan(
-                          children: [
-                            TextSpan(text: tAlreadyHaveAnAccount, style: Theme.of(context).textTheme.bodyText1),
-                            const TextSpan(text: tLogin,),
-                          ]
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
+                SignUpFormWidget(),
+                SignUpFooterWidget(),
               ],
             ),
           ),
@@ -61,3 +34,4 @@ class SignUpScreen extends StatelessWidget {
     );
   }
 }
+
