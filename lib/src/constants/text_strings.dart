@@ -35,4 +35,10 @@ const String tForgetPassword = "Forget Password?";
 const String tOrOption = "or";
 const String tSignInWithGoogle = "Sign-in with Google";
 
+// SignUp Screen
+const String tSignUpTitle = "Get On Board";
+const String tSignUpSubTitle = "Create your profile to start your journey.";
+const String tAlreadyHaveAnAccount = "Already have an Account? ";
+const String tFullName = "Full Name";
+const String tPhoneNumber = "Phone Number";
 

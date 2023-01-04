@@ -29,7 +29,7 @@ class LoginForm extends StatelessWidget {
             ),
             TextFormField(
               decoration: const InputDecoration(
-                  prefixIcon: Icon(Icons.key),
+                  prefixIcon: Icon(Icons.key_outlined),
                   labelText: tPassword,
                   hintText: tPassword,
                   border: OutlineInputBorder(),

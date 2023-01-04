@@ -9,6 +9,7 @@ import 'package:flutter_demo_theme/src/features/authentication/screens/login/log
 import 'package:get/get.dart';
 
 import '../../../../common_widgets/fade_in_animation/fade_in_animation_controller.dart';
+import '../SignUp/signup_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
@@ -75,7 +76,7 @@ class WelcomeScreen extends StatelessWidget {
                       ),
                       Expanded(
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () => Get.to(() => const SignUpScreen()),
                           child: Text(tSignup.toUpperCase()),
                         ),
                       ),

@@ -66,3 +66,5 @@ flutter pub run flutter_launcher_icons
 ### Login Page 
 - [Youtube](https://youtu.be/T5ACgTqqtbk)
 
+### SignUp Page
+- [Youtube](https://youtu.be/rcRppzsY-yw)
