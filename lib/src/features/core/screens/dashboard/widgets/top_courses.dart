@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo_theme/src/features/core/models/Dashboard/top_courses_model.dart';
 
 import '../../../../../constants/colors.dart';
-import '../../../../../constants/image_strings.dart';
 import '../../../../../constants/sizes.dart';
 
 class DashboardTopCourses extends StatelessWidget {
@@ -14,288 +14,56 @@ class DashboardTopCourses extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final list = DashboardTopCoursesModel.list;
     return SizedBox(
       height: 200,
-      child: ListView(
+      child: ListView.builder(
+        itemCount: list.length,
         shrinkWrap: true,
         scrollDirection: Axis.horizontal,
-        children: [
-          SizedBox(
-            width: 320,
-            height: 200,
-            child: Padding(
-              padding: const EdgeInsets.only(right: 10, top: 5),
-              child: Container(
-                decoration: BoxDecoration(borderRadius: BorderRadius.circular(10), color: tCardBgColor),
-                padding: const EdgeInsets.all(10),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Flexible(
-                          child: Text(
-                            "Flutter Crash Course",
-                            style: textTheme.headline4,
-                            maxLines: 2,
-                            overflow: TextOverflow.ellipsis,
-                          ),
-                        ),
-                        const Flexible(child: Image(image: AssetImage(tTopCourseImage1), height: 110)),
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        ElevatedButton(
-                          style: ElevatedButton.styleFrom(shape: const CircleBorder()),
-                          onPressed: () {},
-                          child: const Icon(Icons.play_arrow),
-                        ),
-                        const SizedBox(height: tDashboardPadding),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "3 Sections",
-                              style: textTheme.headline4,
-                              overflow: TextOverflow.ellipsis,
-                            ),
-                            Text(
-                              "Programing Languages",
-                              style: textTheme.bodyText1,
-                              overflow: TextOverflow.ellipsis,
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
+        itemBuilder: (context, index) => SizedBox(
+          width: 320,
+          height: 200,
+          child: Padding(
+            padding: const EdgeInsets.only(right: 10, top: 5),
+            child: Container(
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(10), color: tCardBgColor),
+              padding: const EdgeInsets.all(10),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Flexible(
+                        child: Text(list[index].title,
+                            style: textTheme.headline4, maxLines: 2, overflow: TextOverflow.ellipsis),
+                      ),
+                      Flexible(child: Image(image: AssetImage(list[index].image), height: 110)),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      ElevatedButton(
+                        style: ElevatedButton.styleFrom(shape: const CircleBorder()),
+                        onPressed: list[index].onPress,
+                        child: const Icon(Icons.play_arrow),
+                      ),
+                      const SizedBox(height: tDashboardPadding),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(list[index].heading, style: textTheme.headline4, overflow: TextOverflow.ellipsis),
+                          Text(list[index].subHeading, style: textTheme.bodyText1, overflow: TextOverflow.ellipsis),
+                        ],
+                      ),
+                    ],
+                  ),
+                ],
               ),
             ),
           ),
-          SizedBox(
-            width: 320,
-            height: 200,
-            child: Padding(
-              padding: const EdgeInsets.only(right: 10, top: 5),
-              child: Container(
-                decoration: BoxDecoration(borderRadius: BorderRadius.circular(10), color: tCardBgColor),
-                padding: const EdgeInsets.all(10),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Flexible(
-                          child: Text(
-                            "Flutter Crash Course",
-                            style: textTheme.headline4,
-                            maxLines: 2,
-                            overflow: TextOverflow.ellipsis,
-                          ),
-                        ),
-                        const Flexible(child: Image(image: AssetImage(tTopCourseImage2), height: 110)),
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        ElevatedButton(
-                          style: ElevatedButton.styleFrom(shape: const CircleBorder()),
-                          onPressed: () {},
-                          child: const Icon(Icons.play_arrow),
-                        ),
-                        const SizedBox(height: tDashboardPadding),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "3 Sections",
-                              style: textTheme.headline4,
-                              overflow: TextOverflow.ellipsis,
-                            ),
-                            Text(
-                              "Programing Languages",
-                              style: textTheme.bodyText1,
-                              overflow: TextOverflow.ellipsis,
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-          SizedBox(
-            width: 320,
-            height: 200,
-            child: Padding(
-              padding: const EdgeInsets.only(right: 10, top: 5),
-              child: Container(
-                decoration: BoxDecoration(borderRadius: BorderRadius.circular(10), color: tCardBgColor),
-                padding: const EdgeInsets.all(10),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Flexible(
-                          child: Text(
-                            "Flutter Crash Course",
-                            style: textTheme.headline4,
-                            maxLines: 2,
-                            overflow: TextOverflow.ellipsis,
-                          ),
-                        ),
-                        const Flexible(child: Image(image: AssetImage(tTopCourseImage3), height: 110)),
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        ElevatedButton(
-                          style: ElevatedButton.styleFrom(shape: const CircleBorder()),
-                          onPressed: () {},
-                          child: const Icon(Icons.play_arrow),
-                        ),
-                        const SizedBox(height: tDashboardPadding),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "3 Sections",
-                              style: textTheme.headline4,
-                              overflow: TextOverflow.ellipsis,
-                            ),
-                            Text(
-                              "Programing Languages",
-                              style: textTheme.bodyText1,
-                              overflow: TextOverflow.ellipsis,
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-          SizedBox(
-            width: 320,
-            height: 200,
-            child: Padding(
-              padding: const EdgeInsets.only(right: 10, top: 5),
-              child: Container(
-                decoration: BoxDecoration(borderRadius: BorderRadius.circular(10), color: tCardBgColor),
-                padding: const EdgeInsets.all(10),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Flexible(
-                          child: Text(
-                            "Flutter Crash Course",
-                            style: textTheme.headline4,
-                            maxLines: 2,
-                            overflow: TextOverflow.ellipsis,
-                          ),
-                        ),
-                        const Flexible(child: Image(image: AssetImage(tTopCourseImage1), height: 110)),
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        ElevatedButton(
-                          style: ElevatedButton.styleFrom(shape: const CircleBorder()),
-                          onPressed: () {},
-                          child: const Icon(Icons.play_arrow),
-                        ),
-                        const SizedBox(height: tDashboardPadding),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "3 Sections",
-                              style: textTheme.headline4,
-                              overflow: TextOverflow.ellipsis,
-                            ),
-                            Text(
-                              "Programing Languages",
-                              style: textTheme.bodyText1,
-                              overflow: TextOverflow.ellipsis,
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-          SizedBox(
-            width: 320,
-            height: 200,
-            child: Padding(
-              padding: const EdgeInsets.only(right: 10, top: 5),
-              child: Container(
-                decoration: BoxDecoration(borderRadius: BorderRadius.circular(10), color: tCardBgColor),
-                padding: const EdgeInsets.all(10),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Flexible(
-                          child: Text(
-                            "Flutter Crash Course",
-                            style: textTheme.headline4,
-                            maxLines: 2,
-                            overflow: TextOverflow.ellipsis,
-                          ),
-                        ),
-                        const Flexible(child: Image(image: AssetImage(tTopCourseImage2), height: 110)),
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        ElevatedButton(
-                          style: ElevatedButton.styleFrom(shape: const CircleBorder()),
-                          onPressed: () {},
-                          child: const Icon(Icons.play_arrow),
-                        ),
-                        const SizedBox(height: tDashboardPadding),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "3 Sections",
-                              style: textTheme.headline4,
-                              overflow: TextOverflow.ellipsis,
-                            ),
-                            Text(
-                              "Programing Languages",
-                              style: textTheme.bodyText1,
-                              overflow: TextOverflow.ellipsis,
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-        ],
+        ),
       ),
     );
   }
