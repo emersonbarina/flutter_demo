@@ -27,7 +27,7 @@ const String tWelcomeTitle = "Welcome! Build awesome apps";
 const String tWelcomeSubTitle = "Making apps with fun drawings in Flutter, I loved it! You are welcome to use this code to learn too";
 
 // Login Screen
-const String tLoginTitle = "Welcome!";
+const String tLoginTitle = "Welcome to Login!";
 const String tLoginSubTitle = "Very nice to have you here";
 const String tRememberMe = "Remember Me?";
 const String tNotHaveOnAccount = "Don't have on Account? ";
@@ -57,3 +57,14 @@ const String tFullName = "Full Name";
 const String tPhoneNumber = "Phone Number";
 const String tForgetPassword = "Forget Password?";
 const String tSignInWithGoogle = "Sign-in with Google";
+
+// Dashboard Screen
+const String tDashboardTitle = "Hello, how are your learning going?";
+const String tDashboardSubTitle = "Explore Courses";
+const String tDashboardSearch = "Search...";
+const String tDashboardBannerTitle1 = "Backend in Dark";
+const String tDashboardBannerTitle2 = "Design Flutter";
+const String tDashboardBannerSubTitle = "10 Lessons";
+const String tDashboardButton = "View All";
+const String tDashboardTopCourses = "Top Courses";
+

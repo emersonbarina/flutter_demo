@@ -94,6 +94,7 @@ flutter:
   assets:
     - assets/images/
     - assets/images/common/
+    - assets/images/dashboard/
     - assets/images/splash_and_icon_native/
     - assets/images/start_images/
     - assets/images/on_boarding_images/
