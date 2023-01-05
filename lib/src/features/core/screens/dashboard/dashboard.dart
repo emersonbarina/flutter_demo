@@ -3,6 +3,7 @@ import 'package:flutter_demo_theme/src/constants/colors.dart';
 import 'package:flutter_demo_theme/src/constants/image_strings.dart';
 import 'package:flutter_demo_theme/src/constants/sizes.dart';
 import 'package:flutter_demo_theme/src/constants/text_strings.dart';
+import 'package:flutter_demo_theme/src/features/core/screens/dashboard/widgets/appbar.dart';
 
 class Dashboard extends StatelessWidget {
   const Dashboard({Key? key}) : super(key: key);
@@ -12,29 +13,7 @@ class Dashboard extends StatelessWidget {
     // Variables
     final textTheme = Theme.of(context).textTheme;
     return Scaffold(
-      appBar: AppBar(
-        leading: const Icon(
-          Icons.menu,
-          color: Colors.black,
-        ),
-        title: Text(
-          tAppName,
-          style: Theme.of(context).textTheme.headline4,
-        ),
-        centerTitle: true,
-        elevation: 0,
-        backgroundColor: Colors.transparent,
-        actions: [
-          Container(
-            margin: const EdgeInsets.only(right: 20, top: 7),
-            decoration: BoxDecoration(borderRadius: BorderRadius.circular(10), color: tCardBgColor),
-            child: IconButton(
-              onPressed: () {},
-              icon: const Image(image: AssetImage(tUserProfileImage)),
-            ),
-          ),
-        ],
-      ),
+      appBar: const DashboardAppBar(),
       body: SingleChildScrollView(
         child: Container(
           padding: const EdgeInsets.all(tDashboardPadding),
@@ -553,3 +532,4 @@ class Dashboard extends StatelessWidget {
     );
   }
 }
+
