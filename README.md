@@ -79,3 +79,7 @@ flutter pub run flutter_launcher_icons
 
 ### Dashboard Page
 - [Youtube](https://youtu.be/7587ynOHhAo)
+
+### Firebase
+- [Firebase Auth](https://pub.dev/packages/firebase_auth)
+- [Firebase Auth](https://pub.dev/packages/firebase_core)
