@@ -83,3 +83,4 @@ flutter pub run flutter_launcher_icons
 ### Firebase
 - [Firebase Auth](https://pub.dev/packages/firebase_auth)
 - [Firebase Auth](https://pub.dev/packages/firebase_core)
+- [Flutter Firebase Setup](https://youtu.be/fxDusoMcWj8)
