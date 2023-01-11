@@ -86,3 +86,19 @@ flutter pub run flutter_launcher_icons
 - [Flutter Firebase Setup](https://youtu.be/fxDusoMcWj8)
 - [Configuração Firebase](https://console.firebase.google.com/)
 
+### Firebase Authentication
+- [Youtube](https://youtu.be/Dyu-tcX0H7M)
+- Enable Email Option in Firebase Console
+- [Firebase Console](https://console.firebase.google.com/)
+- Configure Firebase in main.dart
+```
+flutter pub add firebase_auth
+```
+- Get email and password from text fields
+- Add logic in Signup Controller
+- Create Authentication Repository Controller
+- Create SignupWithEmailAndPassword()
+- Create SigninWithEmailAndPassword()
+- Create Logout()
+
+

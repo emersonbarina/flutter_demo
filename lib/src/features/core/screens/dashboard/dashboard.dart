@@ -8,14 +8,18 @@ import 'package:flutter_demo_theme/src/features/core/screens/dashboard/widgets/s
 import 'package:flutter_demo_theme/src/features/core/screens/dashboard/widgets/top_courses.dart';
 
 class Dashboard extends StatelessWidget {
-  const Dashboard({Key? key}) : super(key: key);
+  const Dashboard({
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     // Variables
     final textTheme = Theme.of(context).textTheme;
+    var brightness = MediaQuery.of(context).platformBrightness;
+    bool isDark = brightness == Brightness.dark;
     return Scaffold(
-      appBar: const DashboardAppBar(),
+      appBar: DashboardAppBar(isDark: isDark,),
       body: SingleChildScrollView(
         child: Container(
           padding: const EdgeInsets.all(tDashboardPadding),
