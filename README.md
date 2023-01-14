@@ -87,6 +87,8 @@ flutter pub run flutter_launcher_icons
 - [Configuração Firebase](https://console.firebase.google.com/)
 
 ### Firebase Authentication
+- [Docs](https://firebase.flutter.dev/docs/auth/overview/)
+- [Docs](https://firebase.google.com/docs/auth/flutter/password-auth)
 - [Youtube](https://youtu.be/Dyu-tcX0H7M)
 - Enable Email Option in Firebase Console
 - [Firebase Console](https://console.firebase.google.com/)
@@ -100,5 +102,41 @@ flutter pub add firebase_auth
 - Create SignupWithEmailAndPassword()
 - Create SigninWithEmailAndPassword()
 - Create Logout()
+
+### Firebase Phone Number OTP Authentication
+- [Docs](https://firebase.flutter.dev/docs/auth/phone)
+- [Docs](https://firebase.google.com/docs/auth/flutter/phone-auth)
+- [Installation Java - Video](https://youtu.be/USKdqHp3Glg)
+- [Java Download](https://www.oracle.com/br/java/technologies/javase/javase8u211-later-archive-downloads.html)
+- [Authenticating Your Client](https://developers.google.com/android/guides/client-auth)
+  The keytool utility prompts you to enter a password for the keystore. The default password for the debug keystore is android .
+  To get the debug certificate fingerprint:    
+  on Linux or Mac
+```
+keytool -list -v \
+-alias androiddebugkey -keystore ~/.android/debug.keystore
+```
+- [Link Ativar API](https://console.cloud.google.com/apis/library/androidcheck.googleapis.com?project=flutter-login-app-16887)
+  Configuration in terminal for app
+```
+flutterfire config
+```
+Learn more about using this file and next steps from the documentation:
+[> ](https://firebase.google.com/docs/flutter/setup)
+```
+flutter clear
+flutter pub get
+```
+- [Errors](https://firebase.google.com/docs/auth/admin/errors)
+- [Errors and Exceptions](https://medium.com/flutter-community/exceptions-errors-and-asserts-in-dart-bf021794cb21)
+- [Fonts](https://somniosoftware.com/post/email-authentication-with-firebase-flutter)
+- [Otp Flutter Firebase](https://firebase.google.com/docs/auth/flutter/phone-auth)
+- [Testing OTP Firebase](https://firebase.google.com/docs/auth/flutter/phone-auth#testing)
+- [Doc OTP Firebase](https://firebase.google.com/docs/auth/android/phone-auth)
+- [Doc Dev Android](https://developers.google.com/android/guides/client-auth)
+- [iOS](https://firebase.google.com/docs/auth/ios/start)
+- [iOS phone-auth](https://firebase.google.com/docs/auth/ios/phone-auth)
+- [Price Firebase Google](https://firebase.google.com/pricing)
+- [Youtube](https://youtu.be/dGwr66EkJKk)
 
 

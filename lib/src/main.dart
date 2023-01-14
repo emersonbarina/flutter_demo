@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: TAppTheme.lighTheme,
       darkTheme: TAppTheme.darkTheme,
-      defaultTransition: Transition.leftToRightWithFade,
+      defaultTransition: Transition.rightToLeftWithFade,
       transitionDuration: const Duration(milliseconds: 500),
       home: const CircularProgressIndicator(),
     );

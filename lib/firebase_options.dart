@@ -69,6 +69,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '664044521517',
     projectId: 'flutter-login-app-16887',
     storageBucket: 'flutter-login-app-16887.appspot.com',
+    androidClientId: '664044521517-lj26rm8ekdsevci20tgrqhsjnlv2tctg.apps.googleusercontent.com',
     iosClientId: '664044521517-uea7kn9gpls3931dub2lb4qq47ch5b42.apps.googleusercontent.com',
     iosBundleId: 'com.emersonbarina.flutterDemoTheme',
   );
