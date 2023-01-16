@@ -8,3 +8,6 @@ const tFormHeight = 30.0;
 /* -- App default sizing -- */
 const tDashboardPadding = 20.0;
 const tDashboardCardPadding = 10.0;
+
+/* Duration Snack bar*/
+const tDurationSecondsSnackBar = 10;

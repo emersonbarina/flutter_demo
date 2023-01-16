@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo_theme/src/features/authentication/controllers/login_controller.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 import '../../../../../constants/sizes.dart';
 import '../../../../../constants/text_strings.dart';
-import '../../../../core/screens/dashboard/dashboard.dart';
+
 import '../../forget_password/forget_password_options/forget_password_model_bottom_sheet.dart';
 
 class LoginForm extends StatelessWidget {
@@ -14,6 +14,9 @@ class LoginForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(LoginController());
+//    final formKey = GlobalKey<FormState>();
+
     return Form(
       child: Container(
         padding: const EdgeInsets.symmetric(vertical: tFormHeight - 10),
@@ -21,6 +24,7 @@ class LoginForm extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             TextFormField(
+              controller: controller.email,
               decoration: const InputDecoration(
                 prefixIcon: Icon(Icons.person_outline_outlined),
                 labelText: tEmail,
@@ -32,6 +36,7 @@ class LoginForm extends StatelessWidget {
               height: tFormHeight - 20,
             ),
             TextFormField(
+              controller: controller.password,
               decoration: const InputDecoration(
                   prefixIcon: Icon(Icons.key_outlined),
                   labelText: tPassword,
@@ -57,7 +62,9 @@ class LoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () => Get.to(() => const Dashboard()),
+                onPressed: (){
+                  LoginController.instance.loginUser(controller.email.text.trim(), controller.password.text.trim());
+                },
                 child: Text(tLogin.toUpperCase()),
               ),
             ),

@@ -7,10 +7,8 @@ class SignInWithEmailAndPasswordFailure {
   factory SignInWithEmailAndPasswordFailure.code(String code){
     switch(code){
       case 'user-not-found' : return const SignInWithEmailAndPasswordFailure('Email is note found. Please verify.');
-      case 'weak-password' : return const SignInWithEmailAndPasswordFailure('Please enter a stronger password.');
+      case 'wrong-password' : return const SignInWithEmailAndPasswordFailure('Thrown if the password is invalid for the given email.');
       case 'invalid-email' : return const SignInWithEmailAndPasswordFailure('Email is not valid ou badly formatted.');
-      case 'email-already-in-use' : return const SignInWithEmailAndPasswordFailure('An account already exists for that email.');
-      case 'operation-not-allowed' : return const SignInWithEmailAndPasswordFailure('Operation is not allowed. Please contact support.');
       case 'user-disabled' : return const SignInWithEmailAndPasswordFailure('This user has been disabled. Please contact support for help.');
       default: return const SignInWithEmailAndPasswordFailure();
     }

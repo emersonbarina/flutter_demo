@@ -137,6 +137,9 @@ flutter pub get
 - [iOS](https://firebase.google.com/docs/auth/ios/start)
 - [iOS phone-auth](https://firebase.google.com/docs/auth/ios/phone-auth)
 - [Price Firebase Google](https://firebase.google.com/pricing)
+
 - [Youtube](https://youtu.be/dGwr66EkJKk)
-
-
+Others
+- [Flutter Firebase Phone Authentication](https://youtu.be/dTmgjPkBN58)
+- [login and registration using firebase auth and flutter with forgot password](https://youtu.be/q-eJXcm14aU)
+- [firebase phone authentication flutter | updated](https://youtu.be/iGChxeAhNDU)
