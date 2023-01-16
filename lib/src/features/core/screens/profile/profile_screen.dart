@@ -8,6 +8,8 @@ import 'package:flutter_demo_theme/src/features/core/screens/profile/widgets/pro
 import 'package:get/get.dart';
 import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 
+import '../../../../repository/authentication_repository/authentication_repository.dart';
+
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({Key? key}) : super(key: key);
 
@@ -86,7 +88,9 @@ class ProfileScreen extends StatelessWidget {
               ProfileMenuWidget(
                 title: tMenuLogout,
                 icon: LineAwesomeIcons.alternate_sign_out,
-                onPress: () {},
+                onPress: () {
+                  AuthenticationRepository.instance.logout();
+                },
                 endIcon: false,
                 textColor: Colors.red,
               ),
@@ -97,4 +101,3 @@ class ProfileScreen extends StatelessWidget {
     );
   }
 }
-
