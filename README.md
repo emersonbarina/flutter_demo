@@ -82,7 +82,7 @@ flutter pub run flutter_launcher_icons
 
 ### Firebase
 - [Firebase Auth](https://pub.dev/packages/firebase_auth)
-- [Firebase Auth](https://pub.dev/packages/firebase_core)
+- [Firebase Core](https://pub.dev/packages/firebase_core)
 - [Flutter Firebase Setup](https://youtu.be/fxDusoMcWj8)
 - [Configuração Firebase](https://console.firebase.google.com/)
 
@@ -143,3 +143,8 @@ Others
 - [Flutter Firebase Phone Authentication](https://youtu.be/dTmgjPkBN58)
 - [login and registration using firebase auth and flutter with forgot password](https://youtu.be/q-eJXcm14aU)
 - [firebase phone authentication flutter | updated](https://youtu.be/iGChxeAhNDU)
+
+### Profile Management UI Design
+- [Youtube](https://youtu.be/d4KFeRdZMcw)
+- [pub.dev Cupertino Icons](https://pub.dev/packages/cupertino_icons)
+- [pub.dev Line Awesome](https://pub.dev/packages/line_awesome_flutter)
