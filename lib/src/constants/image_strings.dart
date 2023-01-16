@@ -28,3 +28,6 @@ const String tBannerImage2 = "assets/images/dashboard/dash-02.png";
 const String tTopCourseImage1 = "assets/images/dashboard/dash-top-01.png";
 const String tTopCourseImage2 = "assets/images/dashboard/dash-top-02.png";
 const String tTopCourseImage3 = "assets/images/dashboard/dash-top-03.png";
+
+// Profile Image
+const String tProfileImage = "assets/images/profile/profile_pic.png";
