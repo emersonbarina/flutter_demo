@@ -97,6 +97,7 @@ class UpdateProfileScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: tFormHeight),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         const Text.rich(
                           TextSpan(
