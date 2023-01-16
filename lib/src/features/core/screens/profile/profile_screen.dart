@@ -39,12 +39,29 @@ class ProfileScreen extends StatelessWidget {
           padding: const EdgeInsets.all(tDefaultSize),
           child: Column(
             children: [
-              SizedBox(
-                width: 120,
-                height: 120,
-                child: ClipRRect(
-                    borderRadius: BorderRadius.circular(100),
-                    child: const Image(image: AssetImage(tProfileImage))),
+              Stack(
+                children: [
+                  SizedBox(
+                    width: 120,
+                    height: 120,
+                    child: ClipRRect(
+                        borderRadius: BorderRadius.circular(100),
+                        child: const Image(image: AssetImage(tProfileImage))),
+                  ),
+                  Container(
+                    width: 35,
+                    height: 35,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(100),
+                      color: tPrimaryColor,
+                    ),
+                    child: const Icon(
+                      LineAwesomeIcons.alternate_pencil,
+                      size: 20,
+                      color: Colors.black,
+                    ),
+                  ),
+                ],
               ),
               const SizedBox(height: 10),
               Text(tProfileHeading,
