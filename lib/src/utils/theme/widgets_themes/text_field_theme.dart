@@ -1,25 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo_theme/src/constants/sizes.dart';
 
 import '../../../constants/colors.dart';
 
 class TTextFormFieldTheme {
   TTextFormFieldTheme._();
 
-  static InputDecorationTheme lightInputDecorationTheme =
-      const InputDecorationTheme(
-          border: OutlineInputBorder(),
-          prefixIconColor: tSecondaryColor,
-          floatingLabelStyle: TextStyle(color: tSecondaryColor),
-          focusedBorder: OutlineInputBorder(
-            borderSide: BorderSide(width: 2, color: tSecondaryColor),
-          ));
+  static InputDecorationTheme lightInputDecorationTheme = InputDecorationTheme(
+      border: OutlineInputBorder(borderRadius: BorderRadius.circular(tBorderRadiusCircular)),
+      prefixIconColor: tSecondaryColor,
+      floatingLabelStyle: const TextStyle(color: tSecondaryColor),
+      focusedBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(tBorderRadiusCircular),
+        borderSide: const BorderSide(width: 2, color: tSecondaryColor),
+      ));
 
-  static InputDecorationTheme darkInputDecorationTheme =
-      const InputDecorationTheme(
-          border: OutlineInputBorder(),
-          prefixIconColor: tPrimaryColor,
-          floatingLabelStyle: TextStyle(color: tPrimaryColor),
-          focusedBorder: OutlineInputBorder(
-            borderSide: BorderSide(width: 2, color: tPrimaryColor),
-          ));
+  static InputDecorationTheme darkInputDecorationTheme = InputDecorationTheme(
+      border: OutlineInputBorder(borderRadius: BorderRadius.circular(tBorderRadiusCircular)),
+      prefixIconColor: tPrimaryColor,
+      floatingLabelStyle: const TextStyle(color: tPrimaryColor),
+      focusedBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(tBorderRadiusCircular),
+        borderSide: const BorderSide(width: 2, color: tPrimaryColor),
+      ));
 }
