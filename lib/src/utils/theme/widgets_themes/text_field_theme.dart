@@ -15,11 +15,11 @@ class TTextFormFieldTheme {
           ));
 
   static InputDecorationTheme darkInputDecorationTheme =
-  const InputDecorationTheme(
-      border: OutlineInputBorder(),
-      prefixIconColor: tPrimaryColor,
-      floatingLabelStyle: TextStyle(color: tPrimaryColor),
-      focusedBorder: OutlineInputBorder(
-        borderSide: BorderSide(width: 2, color: tPrimaryColor),
-      ));
+      const InputDecorationTheme(
+          border: OutlineInputBorder(),
+          prefixIconColor: tPrimaryColor,
+          floatingLabelStyle: TextStyle(color: tPrimaryColor),
+          focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide(width: 2, color: tPrimaryColor),
+          ));
 }

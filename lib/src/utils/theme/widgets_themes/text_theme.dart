@@ -6,7 +6,7 @@ import '../../../constants/colors.dart';
 class TTextTheme {
   TTextTheme._();
 
-  static TextTheme lighTextTheme = TextTheme(
+  static TextTheme lightTextTheme = TextTheme(
     headline1: GoogleFonts.montserrat(fontSize: 28.0, fontWeight: FontWeight.bold, color: tDarkColor,),
     headline2: GoogleFonts.montserrat(fontSize: 24.0, fontWeight: FontWeight.w700, color: tDarkColor,),
     headline3: GoogleFonts.poppins(fontSize: 24.0, fontWeight: FontWeight.w700, color: tDarkColor,),

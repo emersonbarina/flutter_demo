@@ -19,18 +19,14 @@ class ProfileScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          onPressed: () {},
+          onPressed: () => Get.back(),
           icon: const Icon(LineAwesomeIcons.angle_left),
-          color: isDark ? tWhiteColor : tDarkColor,
         ),
         title: Text(tProfile, style: Theme.of(context).textTheme.headline4),
-        backgroundColor: Colors.transparent,
-        elevation: 0,
         actions: [
           IconButton(
             onPressed: () {},
             icon: Icon(isDark ? LineAwesomeIcons.sun : LineAwesomeIcons.moon),
-            color: isDark ? tWhiteColor : tDarkColor,
           )
         ],
       ),
