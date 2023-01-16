@@ -3,6 +3,9 @@ import 'package:flutter_demo_theme/src/constants/colors.dart';
 import 'package:flutter_demo_theme/src/constants/image_strings.dart';
 import 'package:flutter_demo_theme/src/constants/sizes.dart';
 import 'package:flutter_demo_theme/src/constants/text_strings.dart';
+import 'package:flutter_demo_theme/src/features/core/screens/profile/update_profile_screen.dart';
+import 'package:flutter_demo_theme/src/features/core/screens/profile/widgets/profile_menu.dart';
+import 'package:get/get.dart';
 import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -14,12 +17,19 @@ class ProfileScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-            onPressed: () {}, icon: const Icon(LineAwesomeIcons.angle_left)),
+          onPressed: () {},
+          icon: const Icon(LineAwesomeIcons.angle_left),
+          color: isDark ? tWhiteColor : tDarkColor,
+        ),
         title: Text(tProfile, style: Theme.of(context).textTheme.headline4),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
         actions: [
           IconButton(
-              onPressed: () {},
-              icon: Icon(isDark ? LineAwesomeIcons.sun : LineAwesomeIcons.moon))
+            onPressed: () {},
+            icon: Icon(isDark ? LineAwesomeIcons.sun : LineAwesomeIcons.moon),
+            color: isDark ? tWhiteColor : tDarkColor,
+          )
         ],
       ),
       body: SingleChildScrollView(
@@ -43,7 +53,7 @@ class ProfileScreen extends StatelessWidget {
               SizedBox(
                 width: 200,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () => Get.to(() => const UpdateProfileScreen()),
                   style: ElevatedButton.styleFrom(
                       backgroundColor: tPrimaryColor,
                       side: BorderSide.none,
@@ -54,6 +64,32 @@ class ProfileScreen extends StatelessWidget {
               ),
               const SizedBox(height: 30),
               const Divider(),
+              const SizedBox(height: 10),
+              ProfileMenuWidget(
+                  title: tMenuSetting,
+                  icon: LineAwesomeIcons.cog,
+                  onPress: () {}),
+              ProfileMenuWidget(
+                  title: tMenuBilling,
+                  icon: LineAwesomeIcons.wallet,
+                  onPress: () {}),
+              ProfileMenuWidget(
+                  title: tMenuManagement,
+                  icon: LineAwesomeIcons.user_check,
+                  onPress: () {}),
+              const Divider(color: Colors.grey),
+              const SizedBox(height: 10),
+              ProfileMenuWidget(
+                  title: tMenuInformation,
+                  icon: LineAwesomeIcons.info,
+                  onPress: () {}),
+              ProfileMenuWidget(
+                title: tMenuLogout,
+                icon: LineAwesomeIcons.alternate_sign_out,
+                onPress: () {},
+                endIcon: false,
+                textColor: Colors.red,
+              ),
             ],
           ),
         ),
@@ -61,3 +97,4 @@ class ProfileScreen extends StatelessWidget {
     );
   }
 }
+

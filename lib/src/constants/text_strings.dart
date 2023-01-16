@@ -76,11 +76,11 @@ const String tLogoutDialogHeading = "Logout";
 const String tProfileHeading = "Demo LoginApp";
 const String tProfileSubHeading = "contato@email.com";
 // Menu
-const String tMenu5 = tLogout;
-const String tMenu4 = "Information";
-const String tMenu3 = "User Management";
-const String tMenu2 = "Billing Details";
-const String tMenu1 = "Setting";
+const String tMenuLogout = tLogout;
+const String tMenuInformation = "Information";
+const String tMenuManagement = "User Management";
+const String tMenuBilling = "Billing Details";
+const String tMenuSetting = "Setting";
 // Update Profile Screen
 const String tDelete = "Delete";
 const String tJoined = "Joined";
