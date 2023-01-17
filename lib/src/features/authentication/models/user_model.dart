@@ -12,4 +12,13 @@ class UserModel {
     required this.phoneNo,
     required this.password,
   });
+
+  toJson() {
+    return {
+      "fullName": fullName,
+      "email": email,
+      "phoneNo": phoneNo,
+      "password": password,
+    };
+  }
 }
