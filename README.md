@@ -153,4 +153,7 @@ Others
 - [Pricing](https://firebase.google.com/pricing?authuser=0#blaze-calculator)
 - [Youtube](https://youtu.be/LlQimtjqZ9A)
 - [Cloud Firestore](https://pub.dev/packages/cloud_firestore)
-- 
+Updating versions
+```
+flutter pub upgrade --major-versions
+```

@@ -4,7 +4,6 @@ import 'package:flutter_demo_theme/src/features/authentication/models/user_model
 import 'package:get/get.dart';
 import '../../../../../constants/sizes.dart';
 import '../../../../../constants/text_strings.dart';
-import '../../forget_password/forget_password_otp/otp_screen.dart';
 
 class SignUpFormWidget extends StatelessWidget {
   const SignUpFormWidget({
@@ -81,8 +80,7 @@ class SignUpFormWidget extends StatelessWidget {
                       phoneNo: controller.phoneNo.text.trim(),
                       password: controller.password.text.trim(),
                     );
-                    SignUpController.instance.phoneAuthentication(user.phoneNo);
-                    Get.to(() => const OTPScreen());
+                    SignUpController.instance.createUser(user);
                   }
                 },
                 child: Text(tSignup.toUpperCase()),
