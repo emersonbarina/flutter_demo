@@ -148,3 +148,9 @@ Others
 - [Youtube](https://youtu.be/d4KFeRdZMcw)
 - [pub.dev Cupertino Icons](https://pub.dev/packages/cupertino_icons)
 - [pub.dev Line Awesome](https://pub.dev/packages/line_awesome_flutter)
+
+### Cloud Firestone
+- [Pricing](https://firebase.google.com/pricing?authuser=0#blaze-calculator)
+- [Youtube](https://youtu.be/LlQimtjqZ9A)
+- [Cloud Firestore](https://pub.dev/packages/cloud_firestore)
+- 
