@@ -1,3 +1,4 @@
+import 'package:flutter_demo_theme/src/features/authentication/models/user_model.dart';
 import 'package:flutter_demo_theme/src/repository/authentication_repository/authentication_repository.dart';
 import 'package:get/get.dart';
 
@@ -16,6 +17,10 @@ class ProfileController extends GetxController {
     } else {
       Get.snackbar("Error", "Login to continue");
     }
+  }
+
+  Future<List<UserModel>> getAllUser() async {
+    return await _userRepo.allUser();
   }
 
 }
