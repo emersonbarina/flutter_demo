@@ -50,6 +50,7 @@ flutter pub run flutter_launcher_icons
 
 ### Splash Screen Animated and GetX 
 - [Package GetX](https://pub.dev/packages/get) 
+- [Packages Get](https://pub.dev/packages/get)
 - [Youtube](https://youtu.be/a6IX3tj1wtk)
 
 ### On Boarding Screen with Animation

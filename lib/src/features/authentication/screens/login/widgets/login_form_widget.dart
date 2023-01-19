@@ -7,10 +7,18 @@ import '../../../../../constants/text_strings.dart';
 
 import '../../forget_password/forget_password_options/forget_password_model_bottom_sheet.dart';
 
-class LoginForm extends StatelessWidget {
+class LoginForm extends StatefulWidget {
   const LoginForm({
     Key? key,
   }) : super(key: key);
+
+  @override
+  State<LoginForm> createState() => _LoginFormState();
+}
+
+class _LoginFormState extends State<LoginForm> {
+
+  bool _isObscure = true;
 
   @override
   Widget build(BuildContext context) {
@@ -35,18 +43,7 @@ class LoginForm extends StatelessWidget {
             const SizedBox(
               height: tFormHeight - 20,
             ),
-            TextFormField(
-              controller: controller.password,
-              decoration: const InputDecoration(
-                  prefixIcon: Icon(Icons.key_outlined),
-                  labelText: tPassword,
-                  hintText: tPassword,
-                  border: OutlineInputBorder(),
-                  suffixIcon: IconButton(
-                    onPressed: null,
-                    icon: Icon(Icons.remove_red_eye_sharp),
-                  )),
-            ),
+            buildTextFormField(controller),
             const SizedBox(
               height: tFormHeight - 20,
             ),
@@ -62,8 +59,10 @@ class LoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: (){
-                  LoginController.instance.loginUser(controller.email.text.trim(), controller.password.text.trim());
+                onPressed: () {
+                  LoginController.instance.loginUser(
+                      controller.email.text.trim(),
+                      controller.password.text.trim());
                 },
                 child: Text(tLogin.toUpperCase()),
               ),
@@ -72,5 +71,28 @@ class LoginForm extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  TextFormField buildTextFormField(LoginController controller) {
+    return TextFormField(
+            controller: controller.password,
+            obscureText: _isObscure,
+            decoration: InputDecoration(
+              prefixIcon: const Icon(Icons.key_outlined),
+              labelText: tPassword,
+              hintText: tPassword,
+              border: const OutlineInputBorder(),
+              suffixIcon: IconButton(
+                onPressed: () {
+                  setState(() {
+                    _isObscure = !_isObscure;
+                  });
+                },
+                icon: Icon( _isObscure
+                    ? Icons.visibility_off_outlined
+                    : Icons.visibility_outlined),
+              ),
+            ),
+          );
   }
 }
