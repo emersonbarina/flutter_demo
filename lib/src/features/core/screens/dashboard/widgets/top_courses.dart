@@ -14,6 +14,8 @@ class DashboardTopCourses extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var brightness = MediaQuery.of(context).platformBrightness;
+    bool isDark = brightness == Brightness.dark;
     final list = DashboardTopCoursesModel.list;
     return SizedBox(
       height: 200,
@@ -27,7 +29,7 @@ class DashboardTopCourses extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.only(right: 10, top: 5),
             child: Container(
-              decoration: BoxDecoration(borderRadius: BorderRadius.circular(10), color: tCardBgColor),
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(10), color: isDark ? tCardBgColorBlack : tCardBgColor),
               padding: const EdgeInsets.all(10),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,

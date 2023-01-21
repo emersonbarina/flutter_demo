@@ -15,13 +15,15 @@ class DashboardBanners extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var brightness = MediaQuery.of(context).platformBrightness;
+    bool isDark = brightness == Brightness.dark;
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         //1st Banner
         Expanded(
           child: Container(
-            decoration: BoxDecoration(borderRadius: BorderRadius.circular(10), color: tCardBgColor),
+            decoration: BoxDecoration(borderRadius: BorderRadius.circular(10), color: isDark ? tCardBgColorBlack : tCardBgColor),
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -58,7 +60,7 @@ class DashboardBanners extends StatelessWidget {
             children: [
               // card
               Container(
-                decoration: BoxDecoration(borderRadius: BorderRadius.circular(10), color: tCardBgColor),
+                decoration: BoxDecoration(borderRadius: BorderRadius.circular(10), color: isDark ? tCardBgColorBlack : tCardBgColor),
                 padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
