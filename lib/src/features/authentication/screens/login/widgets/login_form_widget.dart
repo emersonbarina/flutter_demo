@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo_theme/src/features/authentication/controllers/login_controller.dart';
+import 'package:flutter_demo_theme/src/features/common_widgets/input_password_widget.dart';
 import 'package:get/get.dart';
 
 import '../../../../../constants/sizes.dart';
@@ -17,8 +18,6 @@ class LoginForm extends StatefulWidget {
 }
 
 class _LoginFormState extends State<LoginForm> {
-
-  bool _isObscure = true;
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +42,9 @@ class _LoginFormState extends State<LoginForm> {
             const SizedBox(
               height: tFormHeight - 20,
             ),
-            buildTextFormField(controller),
+            InputPasswordWidget(
+                controller: controller.password,
+            ),
             const SizedBox(
               height: tFormHeight - 20,
             ),
@@ -73,26 +74,5 @@ class _LoginFormState extends State<LoginForm> {
     );
   }
 
-  TextFormField buildTextFormField(LoginController controller) {
-    return TextFormField(
-            controller: controller.password,
-            obscureText: _isObscure,
-            decoration: InputDecoration(
-              prefixIcon: const Icon(Icons.key_outlined),
-              labelText: tPassword,
-              hintText: tPassword,
-              border: const OutlineInputBorder(),
-              suffixIcon: IconButton(
-                onPressed: () {
-                  setState(() {
-                    _isObscure = !_isObscure;
-                  });
-                },
-                icon: Icon( _isObscure
-                    ? Icons.visibility_off_outlined
-                    : Icons.visibility_outlined),
-              ),
-            ),
-          );
-  }
+
 }

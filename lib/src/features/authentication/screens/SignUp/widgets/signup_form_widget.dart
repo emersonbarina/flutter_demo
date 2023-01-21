@@ -4,6 +4,7 @@ import 'package:flutter_demo_theme/src/features/authentication/models/user_model
 import 'package:get/get.dart';
 import '../../../../../constants/sizes.dart';
 import '../../../../../constants/text_strings.dart';
+import '../../../../common_widgets/input_password_widget.dart';
 
 class SignUpFormWidget extends StatelessWidget {
   const SignUpFormWidget({
@@ -53,12 +54,8 @@ class SignUpFormWidget extends StatelessWidget {
             const SizedBox(
               height: tFormHeight - 25,
             ),
-            TextFormField(
+            InputPasswordWidget(
               controller: controller.password,
-              decoration: const InputDecoration(
-                label: Text(tPassword),
-                prefixIcon: Icon(Icons.key_outlined),
-              ),
             ),
             const SizedBox(
               height: tFormHeight - 10,

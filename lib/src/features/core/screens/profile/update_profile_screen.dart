@@ -8,6 +8,7 @@ import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 import '../../../../constants/colors.dart';
 import '../../../../constants/image_strings.dart';
 import '../../../../constants/sizes.dart';
+import '../../../common_widgets/input_password_widget.dart';
 
 class UpdateProfileScreen extends StatelessWidget {
   const UpdateProfileScreen({Key? key}) : super(key: key);
@@ -87,11 +88,9 @@ class UpdateProfileScreen extends StatelessWidget {
                                   prefixIcon: Icon(LineAwesomeIcons.phone)),
                             ),
                             const SizedBox(height: tFormHeight - 20),
-                            TextFormField(
+                            InputPasswordWidget(
                               initialValue: userData.password,
-                              decoration: const InputDecoration(
-                                  label: Text(tPassword),
-                                  prefixIcon: Icon(LineAwesomeIcons.fingerprint)),
+                              iconPrefix: LineAwesomeIcons.fingerprint,
                             ),
                             const SizedBox(height: tFormHeight),
                             SizedBox(
