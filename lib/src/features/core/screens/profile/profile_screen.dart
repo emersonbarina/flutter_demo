@@ -9,6 +9,7 @@ import 'package:get/get.dart';
 import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 
 import '../../../../repository/authentication_repository/authentication_repository.dart';
+import 'list_profile_screen.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({Key? key}) : super(key: key);
@@ -96,7 +97,7 @@ class ProfileScreen extends StatelessWidget {
               ProfileMenuWidget(
                   title: tMenuManagement,
                   icon: LineAwesomeIcons.user_check,
-                  onPress: () {}),
+                  onPress: () {Get.to(() => const ListProfileScreen());}),
               const Divider(color: Colors.grey),
               const SizedBox(height: 10),
               ProfileMenuWidget(

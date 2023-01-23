@@ -85,4 +85,6 @@ const String tMenuSetting = "Setting";
 const String tDelete = "Delete";
 const String tJoined = "Joined";
 const String tJoinedAt = " 16 January 2023";
-
+// List Profile Screen
+const String tListProfile = "List Profiles";
+const String tErrorListProfile = "Something went wronger";
