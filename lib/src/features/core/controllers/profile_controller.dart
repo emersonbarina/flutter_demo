@@ -26,9 +26,7 @@ class ProfileController extends GetxController {
     return await _userRepo.allUser();
   }
 
-
   updateRecord(UserModel userModel) async {
     await _userRepo.updateUserRecord(userModel);
   }
-
 }

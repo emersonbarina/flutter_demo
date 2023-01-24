@@ -41,9 +41,6 @@ class UserRepository extends GetxController {
   }
 
   Future<void> updateUserRecord(UserModel userModel) async {
-
-    print("DATADOC id: ${userModel.id}");
-    print("DATADOC : ${userModel.toJson()}");
     await _db.collection("Users").doc(userModel.id).update(userModel.toJson());
   }
 
