@@ -7,9 +7,11 @@ import '../../../repository/user_repository/user_repository.dart';
 class ProfileController extends GetxController {
   static ProfileController get instance => Get.find();
 
+  // Repositories
   final _authRepo = Get.put(AuthenticationRepository());
   final _userRepo = Get.put(UserRepository());
 
+  // Get User Email and pass to UserRepository to fetch user record
   getUserData() {
     final email = _authRepo.firebaseUser.value?.email;
     if(email != null){
@@ -19,8 +21,14 @@ class ProfileController extends GetxController {
     }
   }
 
+  // Fetch list of user records
   Future<List<UserModel>> getAllUser() async {
     return await _userRepo.allUser();
+  }
+
+
+  updateRecord(UserModel userModel) async {
+    await _userRepo.updateUserRecord(userModel);
   }
 
 }
